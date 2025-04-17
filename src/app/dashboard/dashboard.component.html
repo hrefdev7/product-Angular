@@ -1,0 +1,10 @@
+<div class="dashboard-wrapper">
+
+  <div class="dashboard-card">
+    <h2>🎉 Welcome to Your Dashboard</h2>
+    <p>Glad to have you here, <strong>{{ username }}</strong>!</p>
+  </div>
+  <button (click)="toggleTheme()">
+    {{ isDarkTheme ? '🌞 Light Mode' : '🌙 Dark Mode' }}
+  </button><button (click)="logout()" class="logout-btn">🚪 Logout</button>
+</div>

@@ -1,0 +1,25 @@
+.register-card {
+  width: 100%;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+.form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.link-text {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.link-text a {
+  text-decoration: none;
+  color: #3f51b5;
+  font-weight: bold;
+}

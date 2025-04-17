@@ -1,0 +1,52 @@
+<!--
+
+<div class="login-container">
+  <h2>Login</h2>
+  &lt;!&ndash; [(ngModel)]: Two-way data binding to component variables (email, password).&ndash;&gt;
+  <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+    &lt;!&ndash;#loginForm="ngForm": Template variable to track the form's validity.&ndash;&gt;
+   &lt;!&ndash; Calls onSubmit() method when the form is submitted&ndash;&gt;
+
+    <div>
+      <label>Email:</label>
+      <input type="email" name="email" [(ngModel)]="email" required />
+    </div>
+    <div>
+      <label>Password:</label>
+      <input type="password" name="password" [(ngModel)]="password" required />
+    </div>
+    &lt;!&ndash;[disabled]="!loginForm.form.valid": Button is disabled if form is invalid&ndash;&gt;
+
+    <button type="submit" [disabled]="!loginForm.form.valid">Login</button>
+  </form>
+</div>
+-->
+<div class="login-wrapper">
+  <div class="login-card" @fadeIn>
+  <h2>🔐 Login</h2>
+
+  <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+    <mat-form-field appearance="fill" class="form-field">
+      <mat-label>Username</mat-label>
+      <input matInput type="text" [(ngModel)]="username" name="username" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="form-field">
+      <mat-label>Password</mat-label>
+      <input matInput type="password" [(ngModel)]="password" name="password" required />
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit" [disabled]="!loginForm.form.valid">
+      Login
+    </button>
+  </form>
+    <p class="link-text">
+      Don't have an account?
+      <a routerLink="/register">Register here</a>
+    </p>
+  </div>
+
+
+</div>
+
+

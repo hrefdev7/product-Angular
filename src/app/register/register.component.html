@@ -1,0 +1,33 @@
+<div class="register-card" @fadeIn>
+  <h2>📝 Register</h2>
+
+  <form (ngSubmit)="onRegister()" #registerForm="ngForm">
+    <mat-form-field appearance="fill" class="form-field">
+      <mat-label>Username</mat-label>
+      <input matInput name="username" [(ngModel)]="username" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="form-field">
+      <mat-label>Email</mat-label>
+      <input matInput type="email" name="email" [(ngModel)]="email" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="form-field">
+      <mat-label>Password</mat-label>
+      <input matInput type="password" name="password" [(ngModel)]="password" required />
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit" [disabled]="!registerForm.valid">
+      Register
+    </button>
+
+    <p class="link-text">
+      Already have an account?
+      <a routerLink="/login">Login here</a>
+    </p>
+  </form><p class="link-text">
+  After registration, check your email for the activation link. You can also test it by clicking here:
+  <a routerLink="/activate?token=valid-token">Activate Account</a>
+</p>
+</div>
+
