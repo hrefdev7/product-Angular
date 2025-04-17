@@ -1,4 +1,5 @@
-<<<<<<< HEAD
+📦 Angular Frontend (Tejara UI)
+This Angular 18 frontend is designed for a secure user login system connected to a Spring Boot backend. It features JWT authentication, a material UI design, theme toggle, and route guards for protected views.
 # Tejara
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.17.
